@@ -1,13 +1,41 @@
 import React, { Component } from 'react';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
+import SideDrawer from './components/SideDrawer/SideDrawer';
+import Backdrop from './components/Backdrop/Backdrop'
 
 class App extends Component{
+  state = {
+    sideDrawerOpen: false
+  };
+
+drawerToggleClickHandler = () => {
+  this.setState((prevState) => {
+    return {sideDrawerOpen: !prevState.sideDrawerOpen};
+  })
+};
+
+backdropClickHandler = () => {
+  this.setState({sideDrawerOpen: false})
+}
+
+
   render(){
+    let sideDrawer;
+    let backdrop;
+
+    if (this.state.sideDrawerOpen)  {
+      sideDrawer = <SideDrawer />;
+      backdrop = <Backdrop click={this.backdropClickHandler}/>
+    }
+
      return(
-       <div className="App">
-       <NavBar />
+       <div style={{height: '100%'}}>
+       <NavBar drawerClickHandler={this.drawerToggleClickHandler} />
+       {sideDrawer}
+       {backdrop }
        <main style={{marginTop: '64px'}}><p>This is the page content</p></main>
+       <p>main content</p>
        </div>
      )
   }
