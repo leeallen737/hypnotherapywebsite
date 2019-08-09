@@ -47,3 +47,9 @@ ul.toolbar_navigation_items {
 .toolbar_navigation_items a:active {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  ul.toolbar_navigation_items {
+    display: none;
+  }
+}
