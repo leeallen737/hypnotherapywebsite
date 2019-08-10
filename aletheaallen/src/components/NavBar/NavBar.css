@@ -1,30 +1,96 @@
 /* toolbar */
+body  {
+  font-family:  Calibri,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
 .header {
   position: fixed;
-  background: #1db8ec;
+  background-image: url("../../images/rocks-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 100px;
+  max-width: 100%;
+  height: 500px;
   top: 0;
   left: 0;
 }
 
 /* toolbar_navigation */
 .navbar {
+  position: relative;
   display: flex;
   height: 40px;
-  top: 20;
+  top: 30px;
   align-items: center;
   padding: 0 1rem;
-  background-color: green;
+  background-color: #45BFE8;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.9;
+  box-shadow: 0px 2px 4px #A99E9E;
+}
+
+.logo_social_icons  {
   display: flex;
   justify-content: space-between;
 }
 
+.social_media {
+  position: relative;
+  margin-top: 85px;
+  margin-right: 95px;
+}
+
+.fa-facebook-square {
+  font-size: 35px;
+  color: #45BFE8;
+  margin: 15px;
+}
+
+.fa-facebook-square:hover {
+  font-size: 35px;
+  color: #585757;
+  margin: 15px;
+}
+
+.fa-twitter-square {
+  position: relative;
+  font-size: 35px;
+  color: #45BFE8;
+  margin: 15px;
+}
+
+.fa-twitter-square:hover {
+  position: relative;
+  font-size: 35px;
+  color: #585757;
+  margin: 15px;
+}
+
+.fa-envelope-open {
+  position: absolute;
+  top: -3px;
+  font-size: 35px;
+  color: #45BFE8;
+  margin: 15px;
+}
+
+.fa-envelope-open:hover {
+  position: absolute;
+  top: -3px;
+  font-size: 35px;
+  color: #585757;
+  margin: 15px;
+}
+
 /* toolbar_logo a */
 .logo a {
-  color: white;
+  position: fixed;
+  color: rgb(96, 201, 213);
   text-decoration: none;
   font-size: 1.5rem;
+  margin-top: 60px;
+  margin-left: 120px;
 }
 
 ul.toolbar_navigation_items {
@@ -43,13 +109,46 @@ ul.toolbar_navigation_items {
   text-decoration: none;
 }
 
-.toolbar_navigation_items a:hover,
-.toolbar_navigation_items a:active {
-  text-decoration: underline;
+.toolbar_navigation_items a:hover {
+  color: #585757;
 }
+
+
+.toolbar_navigation_items a:active  {
+  border-style: solid 1px white;
+}
+
 
 @media (max-width: 768px) {
   ul.toolbar_navigation_items {
     display: none;
+  }
+  .my-heading  {
+    position: fixed;
+    top: 250px;
+    left: 100px;
+    width: 400px;
+    font-family:  Calibri,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #575858;
+  }
+  .social_media {
+    display: none;
+  }
+  .navbar  {
+    top: 0;
+    height: 50px;
+    background-color: #fdffff;
+    box-shadow: 0px 0.2px 4px #A99E9E;
+  }
+}
+
+@media (min-width: 769px) {
+  .my-heading  {
+    position: fixed;
+    top: 250px;
+    left: 100px;
+    width: 400px;
+    font-family:  Calibri,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #575858;
   }
 }

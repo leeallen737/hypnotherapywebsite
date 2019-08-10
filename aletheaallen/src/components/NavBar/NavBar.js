@@ -4,9 +4,12 @@ import DrawToggleButton from "../SideDrawer/DrawToggleButton";
 
 const NavBar = props => (
   <header className="header">
+    <span className="logo_social_icons">
     <div className="logo">
       <a href="/">The Logo</a>
     </div>
+    <div className="social_media"><i class="fab fa-facebook-square"></i><i class="fab fa-twitter-square"></i><i class="far fa-envelope-open"></i></div>
+    </span>
     <nav className="navbar">
       <div>
         <DrawToggleButton click={props.drawerClickHandler} />
@@ -31,6 +34,9 @@ const NavBar = props => (
         </ul>
       </div>
     </nav>
+    <div>
+      <h1 className="my-heading">HOW CAN HYPNOTHERAPY HELP YOU?</h1>
+    </div>
   </header>
 );
 

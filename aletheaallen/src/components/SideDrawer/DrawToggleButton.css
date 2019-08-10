@@ -18,7 +18,12 @@
 .toggle_button_line {
     width: 30px;;
     height: 3px;
-    background: white;
+    background: #575858;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    
 }
 
 @media (min-width: 769px) {
