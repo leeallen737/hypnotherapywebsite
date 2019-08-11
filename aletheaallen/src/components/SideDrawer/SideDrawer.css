@@ -26,7 +26,10 @@
 }
 
 .side-drawer li {
-  margin: 0.5rem 0;
+  /* margin: 1.7rem 0; */
+  padding: 1.7rem 0;
+  /* border-bottom: solid 1px #585757; */
+  /* border: 1rem; */
 }
 
 .side-drawer a {
