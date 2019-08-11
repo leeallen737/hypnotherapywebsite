@@ -1,0 +1,58 @@
+section {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.outside_frame {
+  border: 2px solid black;
+  top: 430px;
+  position: relative;
+  width: 950px;
+}
+
+.top1 {
+  margin: 15px;
+  width: 225px;
+  height: 249px;
+  border: 2px solid black;
+}
+
+.top2 {
+  margin: 15px;
+  width: 100%;
+  height: 249px;
+  border: 2px solid black;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom_left {
+  margin: 15px;
+  width: 225px;
+  height: 225px;
+  border: 2px solid black;
+}
+
+.bottom_centre {
+  margin: 15px;
+  width: 225px;
+  height: 225px;
+  border: 2px solid black;
+}
+
+.bottom_right {
+  margin: 15px;
+  width: 225px;
+  height: 225px;
+  border: 2px solid black;
+}
+
+@media (min-width: 769px) {
+  .top {
+    display: flex;
+  }
+}

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
-import Backdrop from './components/Backdrop/Backdrop'
+import Backdrop from './components/Backdrop/Backdrop';
+import Home from './components/Home/Home';
 
 class App extends Component{
   state = {
@@ -28,12 +29,12 @@ backdropClickHandler = () => {
     }
 
      return(
-       <div style={{height: '100%'}}>
+       <div className="app" style={{height: '100%'}}>
        <NavBar drawerClickHandler={this.drawerToggleClickHandler} />
        <SideDrawer show={this.state.sideDrawerOpen}/>
        {backdrop }
        <main style={{marginTop: '64px'}}><p>This is the page content</p></main>
-       <p>main content</p>
+       <Home />
        </div>
      )
   }
