@@ -4,7 +4,7 @@ body  {
 }
 
 .header {
-  position: fixed;
+  /* position: fixed; */
   background-image: url("../../images/rocks-img.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,7 +86,7 @@ body  {
 
 /* toolbar_logo a */
 .logo a {
-  position: fixed;
+  /* position: fixed; */
   color: rgb(96, 201, 213);
   text-decoration: none;
   font-size: 1.5rem;
@@ -152,7 +152,7 @@ ul.toolbar_navigation_items {
 
 @media (min-width: 769px) {
   .my-heading  {
-    position: fixed;
+    /* position: fixed; */
     top: 250px;
     left: 100px;
     width: 400px;
