@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import DrawToggleButton from "../SideDrawer/DrawToggleButton";
+import { Link, } from 'react-router-dom';
 
 const NavBar = props => (
   <header className="header">
@@ -8,7 +9,7 @@ const NavBar = props => (
     <div className="logo">
       <a href="/">The Logo</a>
     </div>
-    <div className="social_media"><i class="fab fa-facebook-square"></i><i class="fab fa-twitter-square"></i><i class="far fa-envelope-open"></i></div>
+    <div className="social_media"><a href=""><i class="fab fa-facebook-square"></i></a><a href="/"><i class="fab fa-twitter-square"></i></a><a href="mailto:alethea@aletheaallen.co.uk"><i class="far fa-envelope-open"></i></a></div>
     </span>
     <nav className="navbar">
       <div>
@@ -17,19 +18,19 @@ const NavBar = props => (
       <div>
         <ul className="toolbar_navigation_items">
           <li>
-            <a href="/">HOME</a>
+            <Link to="/home" href="/">HOME</Link>
           </li>
           <li>
-            <a href="/">ABOUT</a>
+            <Link to="/about" href="/About">ABOUT</Link>
           </li>
           <li>
-            <a href="/">HYPNOTHERAPY</a>
+            <Link to="/hypnotherapy" href="/hypnotherapy">HYPNOTHERAPY</Link>
           </li>
           <li>
-            <a href="/">SERVICES</a>
+            <Link to="/services" href="/services">SERVICES</Link>
           </li>
           <li>
-            <a href="/">CONTACT</a>
+            <Link to="/contact" href="/contactform">CONTACT</Link>
           </li>
         </ul>
       </div>
