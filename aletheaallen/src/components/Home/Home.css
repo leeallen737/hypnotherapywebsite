@@ -6,12 +6,13 @@ section {
 
 .outside_frame {
   border: 2px solid black;
-  top: 430px;
+  /* top: 430px; */
   position: relative;
   width: 950px;
 }
 
 .top1 {
+  align-content: center;
   margin: 15px;
   width: 225px;
   height: 249px;
@@ -20,9 +21,11 @@ section {
 
 .top2 {
   margin: 15px;
-  width: 100%;
+  display: block;
+  min-width: 300px;;
   height: 249px;
   border: 2px solid black;
+  flex-grow: 1
 }
 
 .bottom {
@@ -55,4 +58,22 @@ section {
   .top {
     display: flex;
   }
+}
+
+@media screen and (max-width: 575px) {
+  .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  .outside_frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
