@@ -4,7 +4,13 @@ import NavBar from './components/NavBar/NavBar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import Home from './components/Home/Home';
+import About from './components/About/About';
+import Hypnotherapy from './components/Hypnotherapy/Hypnotherapy'
+import Services from './components/Services/Services';
+import ContactForm from './components/Contact/ContactForm';
 
+import { BrowserRouter, Route } from 'react-router-dom';
+ 
 class App extends Component{
   state = {
     sideDrawerOpen: false
@@ -29,13 +35,20 @@ backdropClickHandler = () => {
     }
 
      return(
+       <BrowserRouter>
        <div className="app" style={{height: '100%'}}>
        <NavBar drawerClickHandler={this.drawerToggleClickHandler} />
        <SideDrawer show={this.state.sideDrawerOpen}/>
        {backdrop }
-       <main style={{marginTop: '64px'}}><p><Home /></p></main>
-       
+       <main style={{marginTop: '64px'}}>
+         <Route exact path='/home' component={Home} />
+         <Route path='/About' component={About} />
+         <Route path='/Hypnotherapy' component={Hypnotherapy} />
+         <Route path='/Services' component={Services} />
+         <Route path='/Contactfrom' component={ContactForm} />
+        </main>
        </div>
+       </BrowserRouter>
      )
   }
 }

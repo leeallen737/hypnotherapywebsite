@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './SideDrawer.css';
 
 const sideDrawer = props => {
@@ -10,19 +11,19 @@ const sideDrawer = props => {
   <nav className={drawerClasses}>
     <ul>
       <li>
-        <a href="/">HOME</a>
+      <Link to="/home" href="/">HOME</Link>
       </li>
       <li>
-        <a href="/">ABOUT</a>
+      <Link to="/about" href="/About">ABOUT</Link>
       </li>
       <li>
-        <a href="/">HYPNOTHERAPY</a>
+      <Link to="/hypnotherapy" href="/hypnotherapy">HYPNOTHERAPY</Link>
       </li>
       <li>
-        <a href="/">SERVICES</a>
+      <Link to="/services" href="/services">SERVICES</Link>
       </li>
       <li>
-        <a href="/">CONTACT</a>
+      <Link to="/contact" href="/contactform">CONTACT</Link>
       </li>
     </ul>
   </nav>
