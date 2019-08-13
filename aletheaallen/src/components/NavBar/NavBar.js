@@ -35,7 +35,7 @@ const NavBar = props => (
       </div>
     </nav>
     <div>
-      <h1 className="my-heading">HOW CAN HYPNOTHERAPY HELP YOU?</h1>
+      <h1 className="my-heading"></h1>
     </div>
   </header>
 );
