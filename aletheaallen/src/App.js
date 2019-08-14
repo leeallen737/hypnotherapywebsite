@@ -41,7 +41,7 @@ backdropClickHandler = () => {
        <SideDrawer show={this.state.sideDrawerOpen}/>
        {backdrop }
        <main style={{marginTop: '64px'}}>
-         <Route exact path='/home' component={Home} />
+         <Route exact path='/' component={Home} />
          <Route path='/About' component={About} />
          <Route path='/Hypnotherapy' component={Hypnotherapy} />
          <Route path='/Services' component={Services} />

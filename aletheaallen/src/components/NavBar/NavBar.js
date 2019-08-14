@@ -7,7 +7,7 @@ const NavBar = props => (
   <header className="header">
     <span className="logo_social_icons">
     <div className="logo">
-      <a href="/">The Logo</a>
+      <a href="/"></a>
     </div>
     <div className="social_media"><a href=""><i class="fab fa-facebook-square"></i></a><a href="/"><i class="fab fa-twitter-square"></i></a><a href="mailto:alethea@aletheaallen.co.uk"><i class="far fa-envelope-open"></i></a></div>
     </span>
@@ -18,7 +18,7 @@ const NavBar = props => (
       <div>
         <ul className="toolbar_navigation_items">
           <li>
-            <Link to="/home" href="/">HOME</Link>
+            <Link to="/" href="/">HOME</Link>
           </li>
           <li>
             <Link to="/about" href="/About">ABOUT</Link>
