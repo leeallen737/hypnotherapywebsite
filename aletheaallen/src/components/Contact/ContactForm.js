@@ -3,6 +3,7 @@ import { withFormik } from 'formik';
 
 const ContactForm = () =>   {
     return(
+        
         <div>
             <input type="email" name="email" placeholder="Email"/>
         </div>
