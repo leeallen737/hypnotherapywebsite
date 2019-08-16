@@ -4,6 +4,9 @@ import "./Home.css";
 const Home = () => {
   return (
     <section>
+    <div className="my-heading">
+      <div className="my-heading-width"><h1>HOW CAN HYPNOTHERAPY HELP YOU?</h1></div>
+    </div>
         <div className="outside_frame">
           <div className="top">
             <div className="top1">top 1</div>
