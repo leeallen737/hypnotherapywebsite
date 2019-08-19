@@ -45,42 +45,77 @@
     height: 220px;
     box-shadow: 0px 1px 2px #a99e9e;
     border: white solid 10px;
+    border-radius: 2px;
   }
   
   .top2 {
-    margin: 15px;
+    margin: 0px 15px 15px 15px;
     display: block;
     min-width: 300px;;
-    height: 249px;
-    border: 2px solid black;
-    flex-grow: 1
+    height: auto;
+    padding: 5px;
+    /* box-shadow: 0px 1px 2px #a99e9e; */
+    flex-grow: 1;
+    border-radius: 2px;
   }
-  
+  p {
+    text-align: justify;
+  }
   .bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .bottom p {
+    color: white;
+    font-weight: bold;
+  }
+
+  .box_label {
+    background-color: #3DBEEA;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid white;
   }
   
   .bottom_left {
     margin: 15px;
     width: 225px;
     height: 225px;
-    border: 2px solid black;
+    background-image: url("../../images/contact.png");
+    box-shadow: 0px 2px 4px #a99e9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .bottom_centre {
     margin: 15px;
     width: 225px;
     height: 225px;
-    border: 2px solid black;
+    border-radius: 2px;
+    background-image: url("../../images/hypnotherapy.png");
+    box-shadow: 0px 2px 4px #a99e9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .bottom_right {
     margin: 15px;
     width: 225px;
     height: 225px;
-    border: 2px solid black;
+    border-radius: 2px;
+    background-image: url("../../images/services.png");
+    box-shadow: 0px 2px 4px #a99e9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
