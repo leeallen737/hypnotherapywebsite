@@ -1,10 +1,102 @@
-/* toolbar */
-body  {
-  font-family:  Calibri,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+body {
+  font-family: 'Rajdhani', sans-serif;
+  /* font-weight: bold; */
+  top: 0;
+  left: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .header {
+    background-image: url("../../images/rock-mobile.png");
+    /* background-repeat: no-repeat; */
+    /* background-color: white; */
+    background-size: cover;
+    height: 337px;
+    box-shadow: 0px 1px 2px #a99e9e;
+  }
+
+  .toolbar_navigation_items {
+    display: none;
+  }
+
+  div .logo {
+    display: none;
+  }
+
+  .social_media {
+    display: none;
+  }
+
+  .social_and_logo {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fa-facebook-square {
+    font-size: 35px;
+    color: #45bfe8;
+    margin: 30px 15px 0px -50px;
+  }
+  
+  .fa-twitter-square {
+    position: relative;
+    font-size: 35px;
+    color: #45bfe8;
+    margin: 30px 15px 0px 15px;
+  }
+  
+  .fa-envelope-open {
+    position: absolute;
+    top: 188px;
+    font-size: 35px;
+    color: #585757;
+    margin: 40px 0px 20px 15px;
+  }
+
+  .logo_name  {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3DBEEA;
+    margin: 50px 0px -4px 0px;
+    padding: 0px;
+  }
+
+  .logo_job_title  {
+    font-size: 30px;
+    font-weight: bold;
+    color: #585757;
+  }
+
+  .logo_slogan  {
+    font-size: 12px;
+    font-weight: bold;
+    color: #3DBEEA;
+    margin: -3px;
+    padding: 0px;
+  }
+
+
+  /* .social_media_mobile a {
+    margin: 3px;
+  } */
+
+  
+  .toggle_button {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
 .header {
-  /* position: fixed; */
   background-image: url("../../images/rocks-img.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,10 +105,10 @@ body  {
   height: 500px;
   top: 0;
   left: 0;
-  box-shadow: 0px 2px 4px #A99E9E;
+  box-shadow: 0px 2px 4px #a99e9e;
 }
 
-/* toolbar_navigation */
+
 .navbar {
   position: relative;
   display: flex;
@@ -28,10 +120,19 @@ body  {
   display: flex;
   justify-content: space-between;
   opacity: 0.9;
-  box-shadow: 0px 2px 4px #A99E9E;
+  box-shadow: 0px 2px 4px #a99e9e;
 }
 
-.logo_social_icons  {
+.my-heading {
+  top: 250px;
+  left: 100px;
+  width: 450px;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+    sans-serif;
+  color: #575858;
+}
+
+.logo_social_icons {
   display: flex;
   justify-content: space-between;
 }
@@ -44,7 +145,7 @@ body  {
 
 .fa-facebook-square {
   font-size: 35px;
-  color: #45BFE8;
+  color: #45bfe8;
   margin: 15px;
 }
 
@@ -57,7 +158,7 @@ body  {
 .fa-twitter-square {
   position: relative;
   font-size: 35px;
-  color: #45BFE8;
+  color: #45bfe8;
   margin: 15px;
 }
 
@@ -72,7 +173,7 @@ body  {
   position: absolute;
   top: -3px;
   font-size: 35px;
-  color: #45BFE8;
+  color: #45bfe8;
   margin: 15px;
 }
 
@@ -84,9 +185,9 @@ body  {
   margin: 15px;
 }
 
-/* toolbar_logo a */
+
 .logo a {
-  /* position: fixed; */
+  
   color: rgb(96, 201, 213);
   text-decoration: none;
   font-size: 1.5rem;
@@ -95,47 +196,57 @@ body  {
 }
 
 ul.toolbar_navigation_items {
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.toolbar_navigation_items li    {
-    padding: 0 1.5rem;
+.toolbar_navigation_items li {
+  padding: 0 1.5rem;
 }
 
 .toolbar_navigation_items a {
   color: white;
   text-decoration: none;
+  border-style: solid 1px white;
+}
+
+.toolbar_navigation_items a:active {
+  color: aqua;
+  z-index: 200;
 }
 
 .toolbar_navigation_items a:hover {
   color: #585757;
 }
-
-
-.toolbar_navigation_items a:active  {
-  border-style: solid 1px white;
 }
 
+/* below this line was css that wasnt working but some was being :-moz-user-disabled */
+
+/* @media (min-width: 1200px) {
+  .my-heading {
+    top: 200px;
+  }
+}
 
 @media (max-width: 768px) {
   ul.toolbar_navigation_items {
     display: none;
   }
-  .my-heading  {
-    position: fixed;
-    top: 250px;
-    left: 100px;
-    width: 400px;
-    font-family:  Calibri,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    color: #575858;
-  }
-  .social_media {
+  .my-heading {
+    /* position: fixed; */
+/* top: -250px; */
+/* left: 100px; */
+/* width: 400px; */
+/* font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", */
+/* sans-serif; */
+/* color: #575858; */
+/* } */
+/* .social_media {
     display: none;
   }
-  .navbar  {
+  .navbar {
     top: 5rem;
     left: 2rem;
     height: 50px;
@@ -143,20 +254,11 @@ ul.toolbar_navigation_items {
     box-shadow: none;
     background-color: rgba(69, 191, 232, 0);
   }
-  .logo a {
-    position: fixed;
-    top: 5rem;
-    left: 3rem;
-  }
 }
 
-@media (min-width: 769px) {
-  .my-heading  {
-    /* position: fixed; */
-    top: 250px;
-    left: 100px;
-    width: 400px;
-    font-family:  Calibri,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    color: #575858;
-  }
+@media (max-width: 768px) {
+.header {
+  background-image: url("../../images/rock-mobile.png");
+  right: 30px;
 }
+} */
