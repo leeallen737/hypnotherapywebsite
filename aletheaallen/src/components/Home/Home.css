@@ -12,11 +12,16 @@
     /* display: none; */
     color: #3DBEEA;
     font-size: 10px;
-    width: 300px;
+    width: 90%;
+    display: flex;
     justify-content: center;
     box-shadow: 0px 1px 2px #a99e9e;
     margin-top: 20px;
-    padding-left: 15px;
+  }
+
+  .my-heading p {
+    font-size: 14px;
+    font-weight: bold;
   }
 
   .outside_frame  {
@@ -81,6 +86,18 @@
     align-items: center;
     border-radius: 2px;
     border: 1px solid white;
+    z-index: 100;
+  }
+
+  .overlay {
+    background-color: rgba( 61, 190, 234, .7);
+
+    /* margin: 15px; */
+    width: 225px;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .bottom_left {
@@ -119,7 +136,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 601px) {
 
 .my-heading {
   top: 300px;
