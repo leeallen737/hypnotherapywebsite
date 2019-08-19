@@ -7,9 +7,9 @@ const NavBar = props => (
   <header className="header">
     <span className="logo_social_icons">
     <div className="logo">
-      <a href="/"></a>
+      <a href=""></a>
     </div>
-    <div className="social_media"><a href=""><i class="fab fa-facebook-square"></i></a><a href="/"><i class="fab fa-twitter-square"></i></a><a href="mailto:alethea@aletheaallen.co.uk"><i class="far fa-envelope-open"></i></a></div>
+    <div className="social_media"><a href="/"><i class="fab fa-facebook-square"></i></a><a href="/"><i class="fab fa-twitter-square"></i></a><a href="mailto:alethea@aletheaallen.co.uk"><i class="far fa-envelope-open"></i></a></div>
     </span>
     <nav className="navbar">
       <div>
@@ -17,9 +17,11 @@ const NavBar = props => (
       </div>
       <div>
         <ul className="toolbar_navigation_items">
+          <div className="active_link">
           <li>
             <Link to="/" href="/">HOME</Link>
           </li>
+          </div>
           <li>
             <Link to="/about" href="/About">ABOUT</Link>
           </li>
@@ -35,8 +37,11 @@ const NavBar = props => (
         </ul>
       </div>
     </nav>
-    <div>
-      <h1 className="my-heading"></h1>
+    <div className="social_and_logo">
+      <div className="logo_name">ALETHEA ALLEN</div>
+      <div className="logo_job_title">HYPNOTHERAPY</div>
+      <div className="logo_slogan">FINDING HAPPINESS</div>
+    <div><a href="/"><i class="fab fa-facebook-square"></i></a><a href="/"><i class="fab fa-twitter-square"></i></a><a href="mailto:alethea@aletheaallen.co.uk"><i class="far fa-envelope-open"></i></a></div>
     </div>
   </header>
 );
