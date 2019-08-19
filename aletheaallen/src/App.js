@@ -45,7 +45,7 @@ backdropClickHandler = () => {
          <Route path='/About' component={About} />
          <Route path='/Hypnotherapy' component={Hypnotherapy} />
          <Route path='/Services' component={Services} />
-         <Route path='/Contactfrom' component={ContactForm} />
+         <Route path='/Contactform' component={ContactForm} />
         </main>
        </div>
        </BrowserRouter>

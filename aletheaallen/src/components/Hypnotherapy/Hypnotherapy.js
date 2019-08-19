@@ -5,7 +5,7 @@ const Hypnotherapy = () => {
   return (
     <section>
     <div className="my-heading">
-      <div className="my-heading-width"><h1>WHAT IS HYPNOTHERAPY?</h1></div>
+      <div className="my-heading-width">WHAT IS HYPNOTHERAPY?</div>
     </div>
         <div className="outside_frame">
           My Hypnotherapy page
