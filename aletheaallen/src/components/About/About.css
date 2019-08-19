@@ -1,0 +1,12 @@
+.my-heading {
+    top: 320px;
+    position: absolute;
+    left: 50%;
+    margin-left: -370px;
+    color: #585757;
+    font-weight: bold;
+  }
+
+  .my-heading-width {
+    font-size: 24px;
+  }
