@@ -5,12 +5,14 @@ import { Link, } from 'react-router-dom';
 
 const NavBar = props => (
   <header className="header">
-    <span className="logo_social_icons">
-    {/* <div className="logo">
-      <a href="">/home</a>
-    </div> */}
+    <div className="desktop_logo_social_icons">
+    <div className="logo">
+      <a href="/"><div className="logo_name">ALETHEA ALLEN</div>
+      <div className="logo_job_title">HYPNOTHERAPY</div>
+      <div className="logo_slogan">FINDING HAPPINESS</div></a>
+    </div>
     <div className="social_media"><a href="/"><i class="fab fa-facebook-square"></i></a><a href="/"><i class="fab fa-twitter-square"></i></a><a href="mailto:alethea@aletheaallen.co.uk"><i class="far fa-envelope-open"></i></a></div>
-    </span>
+    </div>
     <nav className="navbar">
       <div>
         <DrawToggleButton click={props.drawerClickHandler} />
