@@ -31,6 +31,10 @@
     font-weight: bold;
   }
 
+  a:link {
+    text-decoration: none;
+  }
+
   .outside_frame  {
     width: 100%;
     /* border: 1px solid black; */
@@ -162,7 +166,6 @@ section {
   /* width: 900px; */
   justify-items: center;
   display: flex;
-
 }
 
 .outside_frame  {
