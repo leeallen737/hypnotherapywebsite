@@ -40,7 +40,7 @@ backdropClickHandler = () => {
        <NavBar drawerClickHandler={this.drawerToggleClickHandler} />
        <SideDrawer show={this.state.sideDrawerOpen}/>
        {backdrop }
-       <main style={{marginTop: '64px'}}>
+       <main >
          <Route exact path='/' component={Home} />
          <Route path='/About' component={About} />
          <Route path='/Hypnotherapy' component={Hypnotherapy} />
