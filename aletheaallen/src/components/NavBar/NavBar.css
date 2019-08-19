@@ -1,8 +1,9 @@
 body {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   /* font-weight: bold; */
   top: 0;
   left: 0;
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -43,14 +44,14 @@ body {
     color: #45bfe8;
     margin: 30px 15px 0px -50px;
   }
-  
+
   .fa-twitter-square {
     position: relative;
     font-size: 35px;
     color: #45bfe8;
     margin: 30px 15px 0px 15px;
   }
-  
+
   .fa-envelope-open {
     position: absolute;
     top: 188px;
@@ -59,34 +60,32 @@ body {
     margin: 40px 0px 20px 15px;
   }
 
-  .logo_name  {
+  .logo_name {
     font-size: 30px;
     font-weight: bold;
-    color: #3DBEEA;
+    color: #3dbeea;
     margin: 50px 0px -4px 0px;
     padding: 0px;
   }
 
-  .logo_job_title  {
+  .logo_job_title {
     font-size: 30px;
     font-weight: bold;
     color: #585757;
   }
 
-  .logo_slogan  {
+  .logo_slogan {
     font-size: 12px;
     font-weight: bold;
-    color: #3DBEEA;
+    color: #3dbeea;
     margin: -3px;
     padding: 0px;
   }
-
 
   /* .social_media_mobile a {
     margin: 3px;
   } */
 
-  
   .toggle_button {
     position: absolute;
     top: 40px;
@@ -95,17 +94,158 @@ body {
 }
 
 @media only screen and (min-width: 601px) {
+  .header {
+    width: auto;
+    background-image: url("../../images/rocks-img.png");
+    background-size: cover;
+    box-shadow: 0px 2px 4px #a99e9e;
+    /* width: 100%; */
+    height: 500px;
+  }
 
-.header {
+  .navbar {
+    position: relative;
+    display: flex;
+    height: 40px;
+    top: 30px;
+    background-color: rgba(69, 191, 232, 90);
+    justify-content: space-between;
+    opacity: 0.9;
+    box-shadow: 0px 2px 4px #a99e9e;
+  align-items: center;
+  padding: 0 1rem;
+  }
+
+  .social_and_logo {
+    display: none;
+  }
+
+  .desktop_logo_social_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px 30px 10%;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  .logo_name {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3dbeea;
+    margin: 50px 0px -4px 0px;
+    padding: 0px;
+  }
+
+  .logo_job_title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #585757;
+  }
+
+  .logo_slogan {
+    font-size: 12px;
+    font-weight: bold;
+    color: #3dbeea;
+    margin: -3px;
+    padding-left: 90px;
+  }
+
+  .social_media {
+    padding: 50px 50px 0px 0px;
+  }
+  
+  .fa-facebook-square {
+    font-size: 30px;
+    color: #45bfe8;
+    margin: 15px;
+  }
+  
+  .fa-facebook-square:hover {
+    font-size: 30px;
+    color: #585757;
+    margin: 15px;
+  }
+  
+  .fa-twitter-square {
+    /* position: relative; */
+    font-size: 30px;
+    color: #45bfe8;
+    margin: 15px;
+  }
+  
+  .fa-twitter-square:hover {
+    /* position: relative; */
+    font-size: 30px;
+    color: #585757;
+    margin: 15px;
+  }
+  
+  .fa-envelope-open {
+    position: absolute;
+    top: 105px;
+    font-size: 30px;
+    color: #45bfe8;
+    margin: 15px;
+  }
+  
+  .fa-envelope-open:hover {
+    /* position: absolute; */
+    top: 105px;
+    font-size: 30px;
+    color: #585757;
+    margin: 15px;
+  }
+
+  ul.toolbar_navigation_items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .toolbar_navigation_items li {
+    padding: 0 1.5rem;
+  }
+  
+  .toolbar_navigation_items a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-style: solid 1px white;
+  }
+  
+  .toolbar_navigation_items a:active {
+    font-weight: bold;
+  }
+  
+  .toolbar_navigation_items a:hover {
+    color: #585757;
+  }
+
+  
+}
+
+/* .my-heading {
+  top: 250px;
+  left: 100px;
+  width: 450px;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+    sans-serif;
+  color: #575858;
+} */
+
+/* .header {
   background-image: url("../../images/rocks-img.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  max-width: 100%;
-  height: 500px;
-  top: 0;
-  left: 0;
-  box-shadow: 0px 2px 4px #a99e9e;
+  min-width: 100%;
+  height: 500px;  */
+
+/* box-shadow: 0px 2px 4px #a99e9e;
 }
 
 
@@ -123,16 +263,37 @@ body {
   box-shadow: 0px 2px 4px #a99e9e;
 }
 
-.my-heading {
-  top: 250px;
-  left: 100px;
-  width: 450px;
-  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS",
-    sans-serif;
-  color: #575858;
+.desktop
+
+.social_and_logo {
+  display: none;
 }
 
-.logo_social_icons {
+
+
+.logo_name  {
+  font-size: 30px;
+  font-weight: bold;
+  color: #3DBEEA;
+  margin: 50px 0px -4px 0px;
+  padding: 0px;
+}
+
+.logo_job_title  {
+  font-size: 30px;
+  font-weight: bold;
+  color: #585757;
+}
+
+.logo_slogan  {
+  font-size: 12px;
+  font-weight: bold;
+  color: #3DBEEA;
+  margin: -3px;
+  padding: 0px;
+}
+
+.desktop_logo_social {
   display: flex;
   justify-content: space-between;
 }
@@ -220,7 +381,7 @@ ul.toolbar_navigation_items {
 .toolbar_navigation_items a:hover {
   color: #585757;
 }
-}
+} */
 
 /* below this line was css that wasnt working but some was being :-moz-user-disabled */
 

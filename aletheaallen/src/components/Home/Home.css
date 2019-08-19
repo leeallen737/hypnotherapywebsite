@@ -3,6 +3,13 @@
     top: 0;
   }
 
+  body {
+    font-family: 'Rajdhani', sans-serif;
+    /* font-weight: bold; */
+    top: 0;
+    left: 0;
+  }
+
 .outer_frame_heading {
   display: flex;
   justify-content: center;
@@ -16,7 +23,7 @@
     display: flex;
     justify-content: center;
     box-shadow: 0px 1px 2px #a99e9e;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
   .my-heading p {
@@ -136,13 +143,15 @@
   }
 }
 
-@media only screen and (min-width: 601px) {
+ @media only screen and (min-width: 601px) {
 
 .my-heading {
-  top: 300px;
-  position: fixed;
+  top: 320px;
+  position: absolute;
   left: 50%;
-  margin-left: -480px;
+  margin-left: -370px;
+  color: #585757;
+  font-weight: bold;
 }
 
 .my-heading-width {
@@ -150,58 +159,126 @@
 }
 
 section {
-  width: 100%;
-  justify-content: center;
+  /* width: 900px; */
+  justify-items: center;
   display: flex;
+
 }
 
-.outside_frame {
-  border: 2px solid black;
-  position: relative;
-  width: 950px;
+.outside_frame  {
+  width: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 950px;
+
 }
 
 .top1 {
-  align-content: center;
+  /* align-items: center; */
+  background-image: url("../../images/aletheaallenpicture.png");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 15px;
-  width: 225px;
-  height: 249px;
-  border: 2px solid black;
+  width: 200px;
+  height: 220px;
+  box-shadow: 0px 1px 2px #a99e9e;
+  border: white solid 10px;
+  border-radius: 2px;
 }
 
 .top2 {
-  margin: 15px;
-  display: block;
-  min-width: 300px;;
-  height: 249px;
-  border: 2px solid black;
-  flex-grow: 1
+  margin: 0px 15px 15px 15px;
+  /* display: block; */
+  /* min-width: 300px; */
+  width: 50%;
+  height: auto;
+  
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  color: #434242;
+  box-shadow: 0px 1px 2px #a99e9e;
+  
+  border-radius: 2px;
 }
-
+p {
+  text-align: justify;
+}
 .bottom {
   display: flex;
-  justify-content: space-around;
+}
+
+.bottom p {
+  color: white;
+  font-weight: bold;
+}
+
+.box_label {
+  background-color: #3DBEEA;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid white;
+  z-index: 100;
+}
+
+.overlay {
+  background-color: rgba( 61, 190, 234, .7);
+
+  /* margin: 15px; */
+  width: 225px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bottom_left {
   margin: 15px;
   width: 225px;
   height: 225px;
-  border: 2px solid black;
+  background-image: url("../../images/contact.png");
+  box-shadow: 0px 2px 4px #a99e9e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bottom_centre {
   margin: 15px;
   width: 225px;
   height: 225px;
-  border: 2px solid black;
+  border-radius: 2px;
+  background-image: url("../../images/hypnotherapy.png");
+  box-shadow: 0px 2px 4px #a99e9e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bottom_right {
   margin: 15px;
   width: 225px;
   height: 225px;
-  border: 2px solid black;
+  border-radius: 2px;
+  background-image: url("../../images/services.png");
+  box-shadow: 0px 2px 4px #a99e9e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 }
 

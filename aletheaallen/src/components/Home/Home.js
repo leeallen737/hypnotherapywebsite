@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import { Link, } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
           </div>
         </div>
         <div className="bottom">
+        <Link to="/contactform" href="/contactform">
           <div className="bottom_left">
             <div className="overlay">
             <div className="box_label">
@@ -38,6 +40,8 @@ const Home = () => {
             </div>
             </div>
           </div>
+          </Link>
+          <Link to="/hypnotherapy" href="/hypnotherapy">
           <div className="bottom_centre">
           <div className="overlay">
             <div className="box_label">
@@ -45,6 +49,8 @@ const Home = () => {
             </div>
             </div>
           </div>
+          </Link>
+          <Link to="/services" href="/services">
           <div className="bottom_right">
           <div className="overlay">
             <div className="box_label">
@@ -52,6 +58,7 @@ const Home = () => {
             </div>
             </div>
           </div>
+          </Link>
         </div>
       </div>
     </main>
