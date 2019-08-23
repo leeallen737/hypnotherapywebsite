@@ -8,6 +8,7 @@ import About from './components/About/About';
 import Hypnotherapy from './components/Hypnotherapy/Hypnotherapy'
 import Services from './components/Services/Services';
 import ContactForm from './components/Contact/ContactForm';
+import Footer from './components/Footer';
 
 import { BrowserRouter, Route } from 'react-router-dom';
  
@@ -48,6 +49,7 @@ backdropClickHandler = () => {
          <Route path='/Contactform' component={ContactForm} />
         </main>
        </div>
+       <Footer />
        </BrowserRouter>
      )
   }
