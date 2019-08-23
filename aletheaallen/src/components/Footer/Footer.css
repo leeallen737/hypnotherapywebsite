@@ -1,17 +1,79 @@
-footer  {
+footer {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px black solid; */
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  z-index: 400;
+}
+
+.footer_left {
+  /* border: 1px black solid; */
+  color: #434242;
+  margin-left: 80px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+/* .footer_centre  {
     display: flex;
-    justify-content: space-between;
-    border: 1px black solid;
+    align-items: center;
 }
 
-.footer_left    {
-    border: 1px black solid;
+.afsfh {
+  border: 1px black solid;
+  width: 150px;
+  height: 150px;
+  background-image: url("../../images/afsfh.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.footer_centre    {
+.holistic_services {
     border: 1px black solid;
+    width: 150px;
+    height: 20px;
+    background-image: url("../../images/holistic_services.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  } */
+/*
+.footer_centre .img2 {
+    border: 1px black solid;
+    background-image: url("../../images/holistic_services.gif");
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+.footer_right ul {
+  display: flex;
+  list-style: none;
+  color: #434242;
+  margin-right: 80px;
 }
 
-.footer_right    {
-    border: 1px black solid;
+.footer_right li a {
+  margin: 5px;
+  font-size: 12px;
+  color: #434242;
+}
+
+@media only screen and (max-width: 740px) {
+  footer {
+    display: none;
+    /* flex-direction: column-reverse;
+        align-items: center;
+        border: 1px black solid;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        z-index: 400; */
+  }
 }

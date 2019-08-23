@@ -1,17 +1,38 @@
 import React from "react";
 import "./Footer.css";
+import { Link, } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer>
       <div className="footer_left">
-        <p>Web Design by Lee Allen</p>
+        <p>WEB DESIGN BY LEE ALLEN</p>
       </div>
       <div className="footer_centre">
-        <a href="https://afsfh.com/"><img src="/src/images/afsfh.png" alt="afsfh_link"/></a>
-        <img src="../../images/holistic_services.gif" alt="holistic_services"/>
+        <img className="holistic_services"/>
+        <img className="afsfh"/>
       </div>
-      <div className="footer_right">Nav links here >></div>
+      <div className="footer_right"><div>
+        <ul className="footer_navigation_items">
+          <li>
+            <Link to="/" href="/">HOME</Link>
+          </li>
+          <li>
+            <Link to="/about" href="/About">ABOUT</Link>
+          </li>
+          <li>
+            <Link to="/hypnotherapy" href="/hypnotherapy">HYPNOTHERAPY</Link>
+          </li>
+          <li>
+            <Link to="/services" href="/services">SERVICES</Link>
+          </li>
+          <li>
+            <Link to="/contactform" href="/contactform">CONTACT</Link>
+          </li>
+        </ul>
+      </div>
+      </div>
+      
     </footer>
   );
 };
