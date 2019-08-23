@@ -1,0 +1,17 @@
+footer  {
+    display: flex;
+    justify-content: space-between;
+    border: 1px black solid;
+}
+
+.footer_left    {
+    border: 1px black solid;
+}
+
+.footer_centre    {
+    border: 1px black solid;
+}
+
+.footer_right    {
+    border: 1px black solid;
+}
