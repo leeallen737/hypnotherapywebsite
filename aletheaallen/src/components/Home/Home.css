@@ -151,17 +151,32 @@
 
  
 .my-heading {
-  top: 320px;
+  top: 400px;
   position: absolute;
   left: 50%;
   margin-left: -470px;
   color: #585757;
   font-weight: bold;
+  opacity: 0;
+  animation: 1s slidefade 0.5s forwards;
 }
 
 .my-heading-width {
   font-size: 24px;
 }
+
+@keyframes slidefade    {
+  100%    {
+      opacity: 1;
+      top: 320px;
+  }
+}
+@keyframes borderfade    {
+  100%    {
+      border-bottom: #d5cfcf solid 1px;
+  }
+}
+
 
 section {
   /* width: 900px; */
@@ -184,7 +199,8 @@ section {
   justify-content: space-around;
   align-items: center;
   max-width: 1024px;
-  border-bottom: #d5cfcf solid 1px;
+  border-bottom: white solid 1px;
+  animation: 1s borderfade 0.5s forwards;
 }
 
 .top1 {
@@ -199,6 +215,9 @@ section {
   box-shadow: 0px 1px 2px #a99e9e;
   border: white solid 10px;
   border-radius: 2px;
+  animation: 1s slidefade 0.5s forwards;
+  left: -20px;
+  opacity: 0;
 }
 
 .top2 {
@@ -213,9 +232,21 @@ section {
   align-items: center;
   color: #434242;
   /* box-shadow: 0px 1px 2px #a99e9e; */
-  
+  opacity: 0;
+  position: relative;
+  left: -20px;
+  animation: 1s paragraphfade 0.5s forwards;
   border-radius: 2px;
+  
 }
+
+@keyframes paragraphfade    {
+  100%    {
+      opacity: 1;
+      left: 0px;
+  }
+}
+
 p {
   text-align: justify;
 }
@@ -224,7 +255,9 @@ p {
   justify-content: space-around;
   width: 100%;
   max-width: 1024px;
-  margin-top: 20px;
+  margin: 20px 0px 40px 0px;
+  animation: 1s slidefade 0.5s forwards;
+  opacity: 0;
 }
 
 .bottom p {
@@ -246,14 +279,18 @@ p {
 
 .overlay {
   background-color: rgba( 61, 190, 234, .7);
-
-  /* margin: 15px; */
   width: 225px;
   height: 225px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2px;
+  transition: background-color 2.5s ease;
+}
+
+.overlay:hover  {
+  background-color: rgba( 61, 190, 234, .2);
+  transition: background-color 2.5s ease;
 }
 
 .bottom_left {

@@ -19,9 +19,9 @@ const NavBar = props => (
       </div>
       <div>
         <ul className="toolbar_navigation_items">
-          <div className="active_link">
+          <div>
           <li>
-            <Link to="/" href="/">HOME</Link>
+            <Link  className="home_link" to="/" href="/">HOME</Link>
           </li>
           </div>
           <li>

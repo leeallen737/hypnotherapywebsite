@@ -165,6 +165,7 @@ body {
   
   .fa-facebook-square:hover {
     font-size: 30px;
+    transition: color 0.5s ease;
     color: #585757;
     margin: 15px;
   }
@@ -177,7 +178,7 @@ body {
   }
   
   .fa-twitter-square:hover {
-    /* position: relative; */
+    transition: color 0.5s ease;
     font-size: 30px;
     color: #585757;
     margin: 15px;
@@ -192,7 +193,7 @@ body {
   }
   
   .fa-envelope-open:hover {
-    /* position: absolute; */
+    transition: color 0.5s ease;
     top: 105px;
     font-size: 30px;
     color: #585757;
@@ -209,19 +210,27 @@ body {
   .toolbar_navigation_items li {
     padding: 0 1.5rem;
   }
+
+  /* .toolbar_navigation_items li .home_link {
+    border: solid 1px white;
+    border-radius: 2px;
+    padding: 4px 8px;
+  } */
   
   .toolbar_navigation_items a {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
-    border-style: solid 1px white;
+    transition: color 0.5s ease;
   }
   
   .toolbar_navigation_items a:active {
     font-weight: bold;
+    
   }
   
   .toolbar_navigation_items a:hover {
+    transition: color 0.5s ease;
     color: #585757;
   }
 
