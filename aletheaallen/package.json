@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "eslint-utils": "^1.4.2",
     "font-awesome": "^4.7.0",
     "formik": "^1.5.8",
     "images": "^3.0.2",
