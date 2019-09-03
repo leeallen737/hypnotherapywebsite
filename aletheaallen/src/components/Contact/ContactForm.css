@@ -1,0 +1,33 @@
+.outside_contact_form  {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2px;
+    margin: 5vh 5vh;
+
+}
+
+.inside_contact_form    {
+    border: 1px #c8cccc solid;
+    border-radius: 5px;
+    margin: 10px;
+    width: 50vh;
+    height: 30vh;
+    padding: 30px;
+}
+
+input.name  {
+    margin-top: 5px;
+}
+
+.message {
+    width: 97%;
+    margin: 10px 5px px 0px;
+    height: 10vh;
+}
+button  {
+    margin-top: 5px;
+}
