@@ -7,7 +7,8 @@ const ContactForm = () =>   {
     <div className="my-heading">
       <div className="my-heading-width">CONTACT FORM</div>
     </div>
-    <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+    <form name="contact" method="post">
+      <input type="hidden" name="form-name" value="contact" />
       <div className="inside_contact_form">
     <p>
     <input type="text" name="name" placeholder="Name"/>
@@ -15,11 +16,9 @@ const ContactForm = () =>   {
   <p>
     <input type="email" name="email" placeholder="Email"/>
   </p>
-  
   <p>
     <textarea className="message" name="message"></textarea>
   </p>
-  <div data-netlify-recaptcha="true"></div>
   <p>
     <button type="submit">Send</button>
   </p>
